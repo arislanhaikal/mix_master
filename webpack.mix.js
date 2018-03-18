@@ -7,7 +7,16 @@ mix.autoload({
 mix.options({ processCssUrls: false });
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .setPublicPath('public')
+   .browserSync({
+        proxy: 'localhost',
+        files: [
+            'public/css/*.css',
+            'public/js/*.js'
+        ]
+    });
+
 
 // Full API
 // mix.js(src, output);
