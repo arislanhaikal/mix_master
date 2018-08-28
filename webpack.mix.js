@@ -1,19 +1,19 @@
 let mix = require('laravel-mix');
 
-mix.autoload({
-   jquery: ['$', 'window.jQuery']
-});
+// mix.autoload({
+//    jquery: ['$', 'window.jQuery']
+// });
 
 mix.options({ processCssUrls: false });
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
+mix.js('resources/assets/js/app.js', 'assets/js')
+   .sass('resources/assets/sass/app.scss', 'assets/css')
    .setPublicPath('public')
    .browserSync({
         proxy: 'localhost',
         files: [
-            'public/css/*.css',
-            'public/js/*.js'
+            'assets/css/*.css',
+            'assets/js/*.js'
         ]
     });
 
