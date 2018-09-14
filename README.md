@@ -1,4 +1,4 @@
-# mix_master
+# adminator_mix
 Laravel Mix Starter for Frontend Developer with <a href="https://github.com/puikinsh/Adminator-admin-dashboard">Adminator</a>
 <br>
 
