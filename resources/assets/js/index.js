@@ -1,5 +1,5 @@
 import './masonry';
-// import './charts';
+import './charts';
 import './popover';
 import './scrollbar';
 import './search';
@@ -10,6 +10,6 @@ import './chat';
 import './datatable';
 import './datepicker';
 import './email';
-// import './fullcalendar';
-// import './googleMaps';
+import './fullcalendar';
+import './googleMaps';
 import './utils';

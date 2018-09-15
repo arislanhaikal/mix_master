@@ -1,9 +1,18 @@
 // For Mobile
 @include media-breakpoint-down(xs) { 
-
+    .header .header-container .nav-right .dropdown-menu {
+        position: fixed;
+        top:65px;
+        right:10px;
+    }
 }
-@include media-breakpoint-down(sm) { 
-
+@include media-breakpoint-down(sm) {
+    .header .search-input input {
+        width:100%;
+    }
+    .nav-right.hide {
+        display:none;
+    }
 }
 @include media-breakpoint-down(md) {
 

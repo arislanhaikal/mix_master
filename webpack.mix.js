@@ -10,7 +10,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
    .setPublicPath('public')
    .browserSync({
-        proxy: 'localhost',
+        proxy: 'localhost/adminator_mix',
         files: [
             'public/css/*.css',
             'public/js/*.js'
